@@ -1,0 +1,26 @@
+Exemplo 1:
+CREATE DATABASE Biblioteca;
+USE Biblioteca;
+CREATE TABLE Livros (nome string, num int, autor string);
+INSERT INTO Livros (nome, num, autor) VALUES ("Compiladores", 885, "Alfred");
+SELECT * FROM Livros;
+SELECT nome, autor FROM Livros;
+SELECT * FROM Livros ORDER BY num;
+SELECT * FROM Livros WHERE num = 885;
+UPDATE Livros SET nome = "Livro_do_Dragao" WHERE nome = "Compiladores";
+DELETE FROM Livros WHERE nome = "Compiladores";
+TRUNCATE TABLE Livros;
+
+Exemplo 2:
+CREATE DATABASE Empresa;
+USE Empresa;
+CREATE TABLE Funcionario (nome string, idade int, CPF int);
+INSERT INTO Funcionario (nome, idade, CPF) VALUES ("fernando", 25,
+02263563885);
+SELECT * FROM Funcionario;
+SELECT nome, CPF FROM Funcionario;
+SELECT * FROM Funcionario ORDER BY idade;
+SELECT * FROM Funcionario WHERE idade = 25;
+UPDATE Funcionario SET nome = "carlos" WHERE nome = "fernando";
+DELETE FROM Funcionario WHERE nome = "carlos";
+TRUNCATE TABLE Funcionario;
